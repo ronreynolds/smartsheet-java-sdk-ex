@@ -1,5 +1,6 @@
 plugins {
     java
+    id("maven-publish")
 }
 
 group = "com.ronreynolds"
@@ -23,7 +24,16 @@ java {
 }
 
 repositories {
+    mavenLocal()
     mavenCentral()
+}
+
+publishing {
+    publications {
+        create<MavenPublication>("maven") {
+            from(components["java"])
+        }
+    }
 }
 
 dependencies {
