@@ -4,7 +4,7 @@ plugins {
 }
 
 group = "com.ronreynolds"
-version = "0.0.1-SNAPSHOT"
+version = "1.0.0-SNAPSHOT"
 
 // library versions
 val assertJVersion = "3.24.2"
